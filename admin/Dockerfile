@@ -5,6 +5,10 @@ WORKDIR /app
 ARG VITE_BACKEND_URL
 ENV VITE_BACKEND_URL=$VITE_BACKEND_URL
 
+# Accept backend URL from docker-compose during build
+ARG VITE_BACKEND_URL
+ENV VITE_BACKEND_URL=$VITE_BACKEND_URL
+
 COPY package*.json ./
 RUN npm install
 

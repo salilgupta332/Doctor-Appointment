@@ -44,3 +44,4 @@ services:
       - backend
     ports:
       - "5174:5174"
+
